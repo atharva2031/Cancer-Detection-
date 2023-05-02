@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:app/utils/globals.dart';
-import 'imagePage.dart';
+import 'package:app/pages/bloodcancer_leukemia.dart';
 
 class DropdownPage extends StatefulWidget {
-  const DropdownPage({super.key});
+  const DropdownPage({Key? key}) : super(key: key);
+
+  
 
   @override
   DropdownPageState createState() => DropdownPageState();
@@ -85,7 +87,8 @@ class DropdownPageState extends State<DropdownPage> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const MyImagePage()),
+                  MaterialPageRoute(
+                      builder: (context) => const MyBloodCancerLeukemia()),
                 );
               },
               style: ElevatedButton.styleFrom(
